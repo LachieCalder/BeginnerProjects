@@ -146,7 +146,7 @@ while checkFinished(guessed) == False:
     if not guess in secretWord:
         stage = stage + 1
     if stage == 10 or checkFinished == True:
-        endMessage(secretWord, attempts, guessed)
+        break
 
 if stage == 10:
     printHangman(10)
